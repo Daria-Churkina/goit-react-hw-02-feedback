@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './LeaveFeedback.css';
 
-const LeaveFeedback = ({ onLeaveFeedback }) => (
+const FeedbackOptions = ({ onLeaveFeedback }) => (
   <div className="controls">
     <button type="button" name="good" onClick={onLeaveFeedback}>
       Good
@@ -16,8 +15,8 @@ const LeaveFeedback = ({ onLeaveFeedback }) => (
   </div>
 );
 
-LeaveFeedback.propTypes = {
+FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func,
 };
 
-export default LeaveFeedback;
+export default FeedbackOptions;
